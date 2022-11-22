@@ -41,3 +41,6 @@ get connection(): HubConnection{
     this._connection.on(procedureName, callBack);
   }
 }
+
+
+//şolaıshdfşoasdşosdgfeof
