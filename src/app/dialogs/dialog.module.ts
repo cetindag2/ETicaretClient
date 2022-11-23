@@ -7,6 +7,7 @@ import { FileUploadModule } from 'src/app/services/common/file-upload/file-uploa
 import { DeleteDialogComponent } from './delete-dialog/delete-dialog.component';
 import { SelectProductImageDialogComponent } from './select-product-image-dialog/select-product-image-dialog.component';
 import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MatCardModule} from '@angular/material/card';
     MatButtonModule,
     MatDialogModule,
     FileUploadModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule
   ]
 })
 export class DialogModule { }
