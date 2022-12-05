@@ -13,10 +13,10 @@ export class ProductService {
 
   constructor(private httpClientService:HttpClientService) { }
 
-  create(products: Create_Product, successCallBack?: () => void, errorCallBack?: (errorMessage: string) => void) {
+  create(product: Create_Product, successCallBack?: () => void, errorCallBack?: (errorMessage: string) => void) {
     this.httpClientService.post({
       controller: "products"
-    }, products)
+    }, product)
       .subscribe({
         next : (product)=> successCallBack(),
         error: (errorResponse: HttpErrorResponse) => {

@@ -10,7 +10,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import {MatDialogModule} from '@angular/material/dialog';
 import { JwtModule } from '@auth0/angular-jwt';
-import { HttpErrorHandlerIntercepterService } from './services/common/http-error-handler-intercepter.service';
+import { HttpErrorHandlerInterceptorService } from './services/common/http-error-handler-interceptor.service';
 
 
 
@@ -36,7 +36,7 @@ import { HttpErrorHandlerIntercepterService } from './services/common/http-error
   ],
   providers: [
     {provide:"baseUrl", useValue:"https://localhost:7197/api", multi: true},
-    {provide: HTTP_INTERCEPTORS, useClass: HttpErrorHandlerIntercepterService, multi: true}
+    {provide: HTTP_INTERCEPTORS, useClass: HttpErrorHandlerInterceptorService, multi: true}
   ],
   bootstrap: [AppComponent]
 })

@@ -18,7 +18,7 @@ const routes: Routes = [
   ], canActivate: [AuthGuard]
 },
 {path: "", component: HomeComponent },
-{path:"basket", loadChildren: () => import("./ui/components/baskets/baskets.module").then
+{path:"baskets", loadChildren: () => import("./ui/components/baskets/baskets.module").then
 (module => module.BasketsModule)},
 {path:"products", loadChildren: () => import("./ui/components/products/products.module").then
 (module => module.ProductsModule)},
